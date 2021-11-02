@@ -11,6 +11,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { ProfilComponent } from './profil/profil.component';
 import { ResetComponent } from './reset/reset.component';
 import { ListePresenceComponent } from './liste-presence/liste-presence.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ListePresenceComponent } from './liste-presence/liste-presence.componen
     ProfilComponent,
     ResetComponent,
     ListePresenceComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
