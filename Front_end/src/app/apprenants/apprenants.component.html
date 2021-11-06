@@ -90,9 +90,9 @@
                             <td>{{ response.user.prenom }}</td>
                             <td class="txt-oflo">{{ response.user.genre }}</td>
                             <td><span class="text-success">
-                               <a href="#"><i class="fa fa-edit" aria-hidden="true"></i></a> 
-                               <a href="#"><i style="color: red;" class="fa fa-trash" aria-hidden="true"></i></a> 
-                               <a href="#"><i style="color: green;" class="fa fa-eye" aria-hidden="true"></i></a> 
+                               <a [routerLink]="['updateApprenant', response.id]"><i class="fa fa-edit" aria-hidden="true"></i></a> 
+                               <a (click)="deleteApp(response.id)"><i style="color: red;" class="fa fa-trash" aria-hidden="true" onclick ="return(confirm('Etes-vous certain de vouloir supprimer cet apprenant ?'));"></i></a> 
+                               <a [routerLink]="['detailApprenant', response.id]"><i style="color: green;" class="fa fa-eye" aria-hidden="true"></i></a> 
                             </span></td>
                         </tr>
                     </tbody>

@@ -17,6 +17,10 @@ import {HttpClientModule } from '@angular/common/http';
 import { AdminComponent } from './admin/admin.component';
 import { AddApprenantComponent } from './add-apprenant/add-apprenant.component';
 import { UserComponent } from './user/user.component';
+import { UpdateApprenantComponent } from './update-apprenant/update-apprenant.component';
+import { DetailApprenantComponent } from './detail-apprenant/detail-apprenant.component';
+import { AddListePresenceComponent } from './add-liste-presence/add-liste-presence.component';
+import { DetailListePresenceComponent } from './detail-liste-presence/detail-liste-presence.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +37,10 @@ import { UserComponent } from './user/user.component';
     AdminComponent,
     AddApprenantComponent,
     UserComponent,
+    UpdateApprenantComponent,
+    DetailApprenantComponent,
+    AddListePresenceComponent,
+    DetailListePresenceComponent,
   ],
   imports: [
     BrowserModule,
